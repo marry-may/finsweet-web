@@ -80,3 +80,34 @@
         }
     }
 }
+
+@media screen and (max-width: 575px) {
+    .col{
+        &-sm-1-1{
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        &-sm-1-2{
+            width: calc(100%/2);
+            max-width: 50%;
+            margin-bottom: 2.5rem;
+        }
+
+        &-sm-1-3{
+            width: calc(100%/3);
+            max-width: calc(100%/3);
+        }
+
+        &-sm-2-3{
+            width: calc((100%/3)*2);
+            max-width: calc((100%/3)*2);
+        }
+
+        &-sm-1-4{
+            width: calc(100%/4);
+            max-width: calc(100%/4);		
+        }
+    }
+}

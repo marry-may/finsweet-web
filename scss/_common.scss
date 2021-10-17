@@ -19,6 +19,8 @@ body{
   letter-spacing: initial;
   color: $color-text;
   background-color: $color-white;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 // ========= Headings =========
@@ -495,11 +497,11 @@ button {
     .textarea {
         display: block;
         width: 100%;
-        padding: 0 3.2rem;
+        padding: 2rem 3.2rem;
         border-radius: 2.6rem;
         // background: rgba($color-lighter, .8);
         background: $color-input-bg;
-        line-height: 5.4rem;
+        line-height: 1.5;
         font-size: 1.6rem;
         color: $color-subtitle;
 
