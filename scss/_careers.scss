@@ -1,0 +1,126 @@
+.careers{	
+	&-positions{
+		padding-top: 6.4rem;
+
+		&>div{
+			margin-bottom: 4rem;
+		}
+	}
+	
+	&-position{
+		background: $color-lighter;
+		padding: 3.2rem 4rem;
+		border-radius: 2rem;
+		overflow: hidden;
+		cursor: pointer;
+		display: block;
+		transition: all 0.5s;
+
+		&-title{
+			color: $color-subtitle;
+			margin-bottom: 0.8rem;
+		}
+
+		&-subtitle{
+			font-weight: 500;
+			color: rgba($color-nav, .6);
+			margin-bottom: 3.2rem;
+		}
+
+		.apply-now-link{
+			display: inline-block;
+			font-weight: normal;
+			font-size: 1.8rem;
+			color: $color-primary;
+			cursor: pointer;
+		}
+
+		&:hover{
+			background: rgba($color-light, .8);
+		}
+	}
+}
+
+.apply{
+	padding: 13rem 0;
+	
+	.h1{
+    }
+
+	&-heading{
+        padding-top: 5rem;
+        
+        .subtitle{
+            font-size: 1.8rem;
+        }
+    }
+
+	&-info{
+		margin: 6.4rem 0;
+
+		.description{
+			p{
+				width: 64rem;
+				max-width: 100%;
+			}
+		}
+	}
+
+	.h4{
+		color: $color-subtitle;
+		margin-bottom: 1.6rem;
+	}
+
+	&-form{
+		.h2{
+			margin-bottom: 5.2rem;
+		}
+	}
+
+	.form{
+		.input-wrapper{
+			margin-bottom: 2.4rem;
+
+			&:last-of-type{
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&-details,
+	&-details.container{
+		margin-bottom: 12rem;
+		padding: 7rem;
+		background-color: $color-lighter;
+		border-radius: 2rem;
+		overflow: hidden;
+
+		&-tabs{
+			width: 28rem;
+		}
+
+		&-tab{			
+			&-title{
+				cursor: pointer;
+				margin-bottom: 3rem;
+				
+				&.active{
+					.h4{
+						color: $color-primary;
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			&-content{
+				padding-left: 1rem;
+				
+				p{
+					margin-bottom: 2.4rem;
+					line-height: 1.75;
+				}
+			}
+		}
+	}
+	
+}

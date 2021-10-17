@@ -1,0 +1,210 @@
+.services{
+    .header{
+        display: flex;
+        align-items: center;
+
+        p {
+            margin-bottom: 2.4rem;
+        }
+
+        .btn {
+            margin: 0;
+        }       
+    }
+
+    &-block{
+        .media-wrapper{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            overflow: visible;
+            position: relative;
+
+            .services-img {
+                width: 100%;
+            }
+
+            img{
+                width: 100%;
+                border-radius: 2rem;
+                overflow: hidden;
+            }
+
+            &:before{
+                content: none;
+            }
+
+            &:after{
+                content: "";
+                display: block;
+                height: 10rem;
+                width: 10rem;
+                border-radius: 2rem;
+                background: $color-primary;
+                mix-blend-mode: multiply;
+                overflow: hidden;
+                position: absolute;
+                top: 23%;
+                left: -5rem;
+                z-index: 1;
+            }
+        }
+    }
+
+    .header-container{
+        justify-content: space-between;
+    }
+
+    .header-subtitle{
+        font-size: 1.8rem;
+        font-weight: 500;
+        width: 90%;
+        max-width: 510px;
+    }
+
+    .header-description {
+        min-height: 100%;
+        height: inherit;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .header-content{
+        display: block;
+    }    
+
+    &-img{
+        width: 620px;
+        max-width: 100%;
+        position: relative;
+    }
+
+    .services-block{
+        &:last-child{
+            padding-bottom: 0;
+        }
+
+        &:nth-child(odd){
+            .media-wrapper{
+                &:after{
+                    right: -5rem;
+                    left: auto;
+                    top: auto;
+                    bottom: 23%;
+                }
+            }
+        }
+        
+        .wrapper {
+            height: inherit;
+            min-height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .content {
+            width: 540px;
+            max-width: 100%;
+        }
+
+        p {
+            margin-bottom: 2.4rem;
+        }
+
+        .author{
+            margin-top: 3rem;
+            
+            &-container{
+                display: flex;
+                align-items: center;
+            }
+
+            &-img{
+                width: 8rem;
+                height: 8rem;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                }
+            }
+
+            &-info{
+                padding-left: 2.4rem;
+            }
+
+            &-name{
+                font-weight: 500;
+                font-size: 2.4rem;
+                line-height: 1.6;
+                color: $color-secondary;
+                margin-bottom: 0;
+            }
+
+            &-position{
+                color: $color-primary;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .services-video{
+        position: relative;
+        
+        .play-container{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 4rem;
+            cursor: pointer;
+
+            &:hover{
+                .play-icon{
+                    background: $color-primary;
+
+                    &:after{
+                        border-left-color: $color-white;
+                    }
+                }
+            }
+        }
+
+        .play-icon{
+            height: 5rem;
+            width: 5rem;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $color-white;
+            position: relative;
+            cursor: pointer;
+            transition: all .5s;
+
+            &:after{
+                content: "";
+                position: absolute;
+                display: flex;
+                border: 0.9rem solid transparent;
+                border-left: 1.4rem solid #F58A07;
+                position: relative;
+                right: -.6rem;
+                transition: all .5s;
+            }            
+        }
+
+        .play-text{
+            font-weight: 600;
+            font-size: 1.8rem;
+            color: $color-white;
+            margin-left: 1.6rem;            
+        }
+    }
+}
+
